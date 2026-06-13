@@ -4,6 +4,8 @@ const blacklistModel = require("../models/blacklist.model")
 const redis = require("../config/cache")
  
 async function authUser (req, res , next){
+    console.log("COOKIE HEADER:", req.headers.cookie);
+  console.log("PARSED COOKIES:", req.cookies);
  const token = req.cookies.token ;
 
  if(!token){
