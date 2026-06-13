@@ -1,5 +1,5 @@
 import { RouterProvider } from 'react-router'
-import{router} from "../src/routes"
+import router from "./routes"
  import { ContextProvider } from './features/auth/auth.context'
  import "./features/shared/styles/global.scss"
 import { SongContextProvider } from './features/home/song.context'
