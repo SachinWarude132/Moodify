@@ -12,12 +12,22 @@ const {HandleSong} =useSong()
  
     <div className="home">
 
-      <div className="hero">
-        <h1>MODIFY</h1>
-     <p>
-  Music that <span>matches</span> your mood
-</p>
-      </div>
+     <div className="hero">
+
+  <p className="hero__badge">
+    AI Powered Music Experience
+  </p>
+
+  <h1>
+    MOOD<span>IFY</span>
+  </h1>
+
+  <p className="hero__subtitle">
+    Discover songs that adapt to your emotions in real time.
+    Let AI understand your mood and build the perfect soundtrack.
+  </p>
+
+</div>
 
       <div className="dashboard">
 
