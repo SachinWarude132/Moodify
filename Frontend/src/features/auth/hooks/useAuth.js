@@ -14,14 +14,21 @@ export const useAuth = ()=>{
 } = useContext(context);
 
 
-  const handlelogin= async({email,password})=>{
-
+ const handlelogin= async({email,password})=>{
+  try{
     setLoading(true)
-    const data = await login(email,password)
-    setUser(data.user)
-    setLoading(false)
-}
 
+    const data = await login(email,password)
+
+    setUser(data.user)
+
+    return data
+  }catch(err){
+    console.log(err.response?.data)
+  }finally{
+    setLoading(false)
+  }
+}
   const handleregister= async({username ,email,password})=>{
 
     setLoading(true)
@@ -29,12 +36,21 @@ export const useAuth = ()=>{
     setUser(data.user)
     setLoading(false)
 }
- const handlegetme = async()=>{
-     setLoading(true)
-     const data = await getme();
-       setUser(data.user)
-       setLoading(false)
-    }
+ const handlegetme = async () => {
+  try {
+    setLoading(true);
+
+    const data = await getme();
+
+    setUser(data.user);
+  } catch (err) {
+    console.log("getme failed", err.response?.data);
+
+    setUser(null);
+  } finally {
+    setLoading(false);
+  }
+};
 
     const handlelogout =async()=>{
        setLoading(true)
