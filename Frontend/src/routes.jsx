@@ -1,8 +1,8 @@
 import { createBrowserRouter, Link } from "react-router"
-import Login from "./features/Auth/pages/Login"
-import Register from "./features/Auth/pages/Register"
-import Home from "./features/Tasks/components/Home"
-import ProtectedRoute from "./features/Auth/components/ProtectedRoute"
+import Login from "./features/auth/pages/Login"
+import Register from "./features/auth/pages/Register"
+import Home from "./features/home/pages/Home"
+import ProtectedRoute from "./features/auth/components/Protected"
 import "../src/features/home/style/home.scss"
 
 const router = createBrowserRouter([
