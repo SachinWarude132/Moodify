@@ -2,81 +2,94 @@ import { Link } from "react-router";
 import "../style/landing.scss";
 
 const Landing = () => {
-  return (
-    <main className="landing">
+return ( <main className="landing">
 
-      <section className="hero">
-        <div className="hero__content">
 
-          <p className="hero__tag">
-            AI Powered Music Recommendation
-          </p>
+  <div className="landing__bg">
+    <div className="blob blob--1"></div>
+    <div className="blob blob--2"></div>
+    <div className="blob blob--3"></div>
+  </div>
 
-          <h1>
-            Discover Music Through
-            <span> Emotion</span>
-          </h1>
+  <section className="hero">
 
-          <p className="hero__description">
-            Moodify uses AI facial expression detection to understand
-            your emotions and instantly recommend music that matches
-            your mood.
-          </p>
+    <div className="hero__content">
 
-          <div className="hero__actions">
-            <Link className="button" to="/login">
-              Login
-            </Link>
+      <p className="hero__tag">
+        AI Powered Music Recommendation
+      </p>
 
-            <Link
-              className="button button--secondary"
-              to="/register"
-            >
-              Register
-            </Link>
-          </div>
+      <h1>
+        Discover Music Through
+        <span> Emotion</span>
+      </h1>
 
-        </div>
+      <p className="hero__description">
+        Moodify uses AI facial expression detection to understand
+        your emotions and instantly recommend music that matches
+        your mood.
+      </p>
 
-        <div className="hero__image">
-          <img
-            src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=900"
-            alt="Music"
-          />
-        </div>
-      </section>
+      <div className="hero__actions">
+        <Link className="button" to="/login">
+          Login
+        </Link>
 
-    
-      <section className="features">
+        <Link
+          className="button button--secondary"
+          to="/register"
+        >
+          Register
+        </Link>
+      </div>
 
-        <div className="feature">
-          <div className="feature__icon">🎭</div>
-          <h3>Face Detection</h3>
-          <p>
-            Detect emotions using MediaPipe AI facial analysis.
-          </p>
-        </div>
+    </div>
 
-        <div className="feature">
-          <div className="feature__icon">🎵</div>
-          <h3>Smart Recommendations</h3>
-          <p>
-            Receive music recommendations based on your mood.
-          </p>
-        </div>
+    <div className="hero__image">
 
-        <div className="feature">
-          <div className="feature__icon">▶</div>
-          <h3>Instant Listening</h3>
-          <p>
-            Play music immediately after emotion detection.
-          </p>
-        </div>
+      <div className="hero__image-glow"></div>
 
-      </section>
+      <img
+        src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1200"
+        alt="Music"
+      />
 
-    </main>
-  );
+    </div>
+
+  </section>
+
+  <section className="features">
+
+    <div className="feature">
+      <div className="feature__icon">🎭</div>
+      <h3>Face Detection</h3>
+      <p>
+        Detect emotions using MediaPipe AI facial analysis.
+      </p>
+    </div>
+
+    <div className="feature">
+      <div className="feature__icon">🎵</div>
+      <h3>Smart Recommendations</h3>
+      <p>
+        Receive music recommendations based on your mood.
+      </p>
+    </div>
+
+    <div className="feature">
+      <div className="feature__icon">⚡</div>
+      <h3>Instant Listening</h3>
+      <p>
+        Play music immediately after emotion detection.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+
+);
 };
 
 export default Landing;
