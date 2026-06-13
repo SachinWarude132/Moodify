@@ -25,20 +25,24 @@ import {
         }
       );
 
-    const stream =
-      await navigator.mediaDevices.getUserMedia({
-        video: true,
-      });
+  const stream =
+  await navigator.mediaDevices.getUserMedia({
+    video: true,
+  });
+
+      if (!videoRef.current) {
+  stream.getTracks().forEach(track => track.stop());
+  return;
+    }
 
     videoRef.current.srcObject = stream;
-        try {
-      await videoRef.current.play();
-          } catch (err) {
-            console.error(err);
-      }
-   
-  };
 
+    try {
+     await videoRef.current.play();
+    } catch (err) {
+   console.error(err);
+    }
+  }
  export const detect = ({landmarkerRef,videoRef,setExpression}) => {
     if (
       !landmarkerRef.current ||
