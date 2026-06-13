@@ -46,34 +46,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section className="moods">
-
-        <div className="mood-card">
-          <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500"
-            alt="Happy"
-          />
-          <h3>😊 Happy</h3>
-        </div>
-
-        <div className="mood-card">
-          <img
-            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500"
-            alt="Sad"
-          />
-          <h3>😢 Sad</h3>
-        </div>
-
-        <div className="mood-card">
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500"
-            alt="Surprised"
-          />
-          <h3>😲 Surprised</h3>
-        </div>
-
-      </section>
-
+    
       <section className="features">
 
         <div className="feature">
