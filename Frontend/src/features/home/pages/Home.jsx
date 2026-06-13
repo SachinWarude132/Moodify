@@ -14,7 +14,9 @@ const {HandleSong} =useSong()
 
       <div className="hero">
         <h1>MODIFY</h1>
-        <p>Music That Understands Your Mood</p>
+     <h1>
+  Music that <span>matches</span> your mood
+</h1>
       </div>
 
       <div className="dashboard">

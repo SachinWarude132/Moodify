@@ -1,5 +1,5 @@
 .player {
-  background: rgba(255, 255, 255, 0.08);
+  background: #090909;
   backdrop-filter: blur(20px);
 
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,7 +99,7 @@
 
   cursor: pointer;
 
-  background: rgba(255, 255, 255, 0.08);
+  background: #090909;
 
   color: white;
 
@@ -113,7 +113,7 @@
   &:hover {
     transform: translateY(-2px) scale(1.08);
 
-    background: rgba(255, 255, 255, 0.15);
+    background: #090909;
   }
 }
 
@@ -123,11 +123,7 @@
   width: 72px;
   height: 72px;
 
-  background: linear-gradient(
-    135deg,
-    #8b5cf6,
-    #ec4899
-  );
+  background: #090909;
 
   box-shadow:
     0 0 25px rgba(168, 85, 247, 0.5);
@@ -176,7 +172,7 @@
 
   border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.15);
+  background: #090909;
 
   &::-webkit-slider-thumb {
     appearance: none;
@@ -186,7 +182,7 @@
 
     border-radius: 50%;
 
-    background: #ec4899;
+    background: #090909;
 
     cursor: pointer;
 
@@ -207,7 +203,7 @@
   color: #cbd5e1;
 
   select {
-    background: rgba(212, 14, 202, 0.08);
+    background: #090909;
 
     color: rgb(255, 255, 255);
 
