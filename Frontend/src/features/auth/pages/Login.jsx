@@ -45,13 +45,16 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
             label="Email"
             placeholder="Enter your email"
+            type="email"
           />
+
 
           <FormGroup
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             label="Password"
             placeholder="Enter your password"
+            type="password"
           />
 
           {error && (
