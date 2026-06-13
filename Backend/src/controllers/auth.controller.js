@@ -96,6 +96,15 @@ const logincontroller = async(req,res)=>{
   maxAge: 24 * 60 * 60 * 1000
 });
 
+return res.status(200).json({
+  message: "user logged In",
+  user: {
+    id: user._id,
+    username: user.username,
+    email: user.email,
+  },
+});
+
 }
 
 const getme = async (req,res)=>{
